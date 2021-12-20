@@ -2,7 +2,7 @@ FROM openjdk
 
 LABEL maintainer=”arghya roy”
 
-ADD web/target/*.war *.war
+ADD *.war *.war
 
 EXPOSE 8080
 
