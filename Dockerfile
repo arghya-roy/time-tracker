@@ -1,6 +1,6 @@
 FROM openjdk
 
-ADD web/target/*.war *.war
+ADD web/target/*.war /
 
 EXPOSE 8080
 
