@@ -1,10 +1,10 @@
-FROM tomcat:8.0-alpine
+FROM openjdk
 
 LABEL maintainer=”arghya roy”
 
-ADD *.war /usr/local/tomcat/webapps/
+ADD web/target/*.war *.war
 
 EXPOSE 8080
 
-CMD ["startup.sh”, “run”]
+CMD ["java","-jar","/*war"]
 
